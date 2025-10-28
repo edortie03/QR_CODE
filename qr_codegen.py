@@ -10,13 +10,13 @@ def gen_qr(data, file_name):
     qr.add_data(data)
     qr.make(fit=True)
 
-    img = qr.make_image(fill_color="orange", back_color="black")
+    img = qr.make_image(fill_color="white", back_color="black")
     img.save(file_name)
 
     print(f"QR code generated and saved as {file_name}")
 
 # Example usage
-data = "https://github.com/edortie03"
-file_name = "edor_github.png"
+data = "https://whatsapp.com/channel/0029VbAbtmIF1YlOG6k0zy2i"
+file_name = "channel.png"
 gen_qr(data, file_name)
 # This code generates a QR code for the given data and saves it as an image file.
